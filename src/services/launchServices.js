@@ -42,6 +42,9 @@ export const getLaunchById = async (id) => {
             }
             `);
   const json = await response.json();
+  if (json.errors) return {
+      mission_name: `MISSION ${id} NOT FOUND`,
+  };
 
   return json.data.launch;
 };
