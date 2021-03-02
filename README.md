@@ -17,3 +17,6 @@ I've decided to create this app using [ReactJS](https://reactjs.org/) because it
 - Use Sass for more robuste and reusable styles
 #### PRODUCT
 - Back button on details page for a better usability
+- Responsive
+- Mission Image
+- Page loading indicator
