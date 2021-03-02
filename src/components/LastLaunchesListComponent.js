@@ -13,7 +13,7 @@ const LastLaunchesList = () => {
 
   // methods
   const handleClick = (id) => {
-    history.push(`/details/${id}`);
+    history.push(`/mission/${id}`);
   }
 
   // fetch

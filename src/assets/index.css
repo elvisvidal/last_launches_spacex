@@ -101,6 +101,11 @@ ol, ul {
   text-decoration: none;
 }
 
+/* page-404 */
+.page-404 .card-banner {
+  width: 100%;
+}
+
 /* TODO: remove after final image */
 .img-placeholder {
   width: 803px;

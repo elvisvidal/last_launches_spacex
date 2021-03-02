@@ -6,6 +6,7 @@ import {
   Route,
 } from "react-router-dom";
 import './assets/index.css';
+import Page404 from './components/404Component';
 import LastLaunchesList from './components/LastLaunchesListComponent';
 import LaunchDetails from './components/LaunchDetailsComponent';
 
@@ -15,8 +16,11 @@ render((
     <Route exact path="/">
       <LastLaunchesList />
     </Route>
-    <Route path="/details/:launchId">
+    <Route path="/mission/:launchId">
       <LaunchDetails />
+    </Route>
+    <Route>
+      <Page404 />
     </Route>
   </Switch>
 </Router>
