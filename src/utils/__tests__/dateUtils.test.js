@@ -7,6 +7,7 @@ describe('dateUtils', () => {
 
         const inputMonth = 11;
         expect(dateLabel(inputMonth)).not.toEqual('011');
+        expect(dateLabel(inputMonth)).toEqual(11);
 
         const inputInvalid = 'abc';
         expect(dateLabel(inputInvalid)).toEqual(undefined);
