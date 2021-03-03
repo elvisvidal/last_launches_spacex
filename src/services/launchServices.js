@@ -60,7 +60,7 @@ export const getLaunchById = async (id) => {
 
   const { launch } = json.data;
 
-  launch.banner = (launch.links.flickr_images.length > 0)
+  launch.banner = (launch.links.flickr_images && launch.links.flickr_images.length > 0)
     ? launch.links.flickr_images[0] : null;
 
   return launch;
