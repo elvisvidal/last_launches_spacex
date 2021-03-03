@@ -89,6 +89,10 @@ ol, ul {
   text-align: center;
 }
 
+.card-subsection {
+  margin-top: 20px;
+}
+
 .card-external-link {
   display: block;
   width: 115px;
@@ -101,16 +105,8 @@ ol, ul {
   text-decoration: none;
 }
 
-/* page-404 */
-.page-404 .card-banner {
+/* banner */
+.card-banner {
   width: 100%;
-}
-
-/* TODO: remove after final image */
-.img-placeholder {
-  width: 803px;
-  height: 330px;
-  position: relative;
-  left: -1px;
-  background-color: #e0e6ed;
+  display: block;
 }

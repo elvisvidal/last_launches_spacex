@@ -34,9 +34,21 @@ export const getLaunchById = async (id) => {
                     id
                     mission_name
                     details
+                    launch_site {
+                        site_name_long
+                        site_name
+                    }
                     links {
                         article_link
                         video_link
+                        flickr_images
+                    }
+                    rocket {
+                        rocket_name
+                        rocket_type
+                    }
+                    ships {
+                        name
                     }
                 }
             }
@@ -46,5 +58,10 @@ export const getLaunchById = async (id) => {
       mission_name: `MISSION ${id} NOT FOUND`,
   };
 
-  return json.data.launch;
+  const { launch } = json.data;
+
+  launch.banner = (launch.links.flickr_images.length > 0)
+    ? launch.links.flickr_images[0] : null;
+
+  return launch;
 };
